@@ -20,4 +20,18 @@ const page2 = {
   status: 'close',
 }
 
+type Page = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: string,
+  details?: {
+    createAt: Date,
+    updateAt: Date,
+  }
+}
+
+const a:Page = page1;
+const b:Page = page2;
+
 export {};
